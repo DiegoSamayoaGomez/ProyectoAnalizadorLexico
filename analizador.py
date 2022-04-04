@@ -36,7 +36,7 @@ class BasicLexer(Lexer):
 #Especificar salto de linea
     @_(r'\n+')
     def newline(self,t ):
-        self.lineno = t.value.count('\n')
+       self.lineno = self.lineno + t.value.count('\n')
 
 #Especificar manejo de errores
     def error(self, t):
