@@ -35,4 +35,4 @@ Luego de abrir ```WINDOW.py```, ejecute el archivo en la terminal y se abrirá l
 -	El programa detectará caracteres no válidos y los reportará.
 
 ## Manejo de errores
-Si se encuentra un carácter incorrecto durante el análisis, la tokenización continuará. Sin embargo, para manejar los errores de análisis léxico que se producen cuando se detectan caracteres ilegales, el método de ```error()``` recibe un Token en el que la cadena de texto separada en toknes contiene todo el texto restante sin errores. Es decir, este manejador de errores mira este texto y podrá saltarlo sin detener la ejecución.
+Si se encuentra un carácter incorrecto durante el análisis, la tokenización continuará. Sin embargo, para manejar los errores de análisis léxico que se producen cuando se detectan caracteres ilegales, el método de ```error()``` recibe el token inválido de la cadena de texto analizada, lo aisla y guarda un registro del error mientras en analizador contiene y ejecuta todo el texto restante sin errores. Es decir, este manejador de errores mira este texto y podrá saltarlo sin detener la ejecución mientras archiva los errores.
